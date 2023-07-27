@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="portfolio.css">
+
+<!--animation link-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<!--jquery link-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--font awesome icons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
+</head>
+
+<!--shortcut for div class = .classname + enter-->
+
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="box">
+    <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+    <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+    <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+    <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.9s;"></div>
+    <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+    <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+</div>
+<div id ="middle" class="animated slideInDown" style="animation-delay:2s;">
+<h1>I'm Harshit</h1>
+<h2>Web Developer</h2>
+
+<div id="menu">
+    <a>about</a>
+    <a>work</a>
+    <a>contact</a>
+    <a>skills</a>
+    <a>testimonial</a>
+</div>
+
+<!--social icon-->
+<table>
+<tr>
+    <td class="animated zoomIn" style="animation-delay:2.2s;">
+       <a class="social"><i class="fab fa-github"></i></a>
+    </td>
+     
+    <td class="animated zoomIn" style="animation-delay:2.4s;">
+       <a class="social"><i class="fab fa-twitter"></i></a>
+     </td>
+
+     <td class="animated zoomIn" style="animation-delay:2.6s;">
+        <a class="social"><i class="fab fa-instagram"></i></a>
+     </td>
+
+     <td class="animated zoomIn" style="animation-delay:2.10s;">
+        <a class="social"><i class="fab fa-whatsapp"></i></a>
+    </td>
+
+</tr>
+</table>
+</div>
+<!--navigation link-->
+<a id="about">About</a>
+<a id="work">Work</a>
+<a id="skills">Skills</a>
+<a id="contact">Contact</a>
+<a id="testimonial">Testimonial</a>
+
+
+
+
+<script>
+   setTimeout(function(){
+    $("#loading").addClass("animated fadeOut");
+    setTimeout(function(){
+    $("#loading").addClass("animated fadeOut");
+    $("#loading").css("display","none");
+    $("#box").css("display","none");
+   },100);
+},1500); 
+</script>
+</body>
+</html>
